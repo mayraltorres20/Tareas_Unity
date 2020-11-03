@@ -21,6 +21,7 @@ public class Ariel : MonoBehaviour
         MovDer.AddForce(direccion*magnitud, ForceMode2D.Impulse);
 
         Debug.Log(magnitud);
+        Debug.Log(direccion);
 
         
     }
