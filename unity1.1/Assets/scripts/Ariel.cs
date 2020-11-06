@@ -5,6 +5,14 @@ using UnityEngine;
 
 public class Ariel : MonoBehaviour
 {
+  /*void OnCollisionEnter2D ( colisión Collision2D )
+    {
+        if (collision.gameObject.tag == "Ariel")
+        {
+            Debug.Log("wihh");
+        }
+    }*/
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +38,16 @@ public class Ariel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
+    }
+
+    void OnCollisionEnter2D ( Collision2D collision )
+    {
+
+         Debug.Log("OnCollisionEnter2D " + collision.gameObject.tag);
+        if (collision.gameObject.tag == "Bola")
+        {
+            Debug.Log("wihhhhhhh");
+        }
     }
 }
